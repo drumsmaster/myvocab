@@ -1,0 +1,6 @@
+minVocWidth	20000
+maxVocWidth	40000
+vocWidthCoef	0.4
+coarseBinNum	40
+minBinSize	10
+fineBinNum	400

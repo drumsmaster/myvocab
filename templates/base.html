@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест словарного запаса</title>    
+    <meta name="description" content="Тест словарного запаса, русский язык" />    
+    <meta name="author" content="Григорий Головин" />
+    <meta name="copyright" content="Григорий Головин" />
+    <link rel="stylesheet" href="static/css/foundation.css" />
+    <script src="static/js/modernizr.js"></script>
+  </head>
+  <body>
+    
+<!-- Nav Bar -->
+
+  <div class="row">
+    <div class="medium-12 columns">
+      <div class="nav-bar right">
+       <ul class="button-group radius">
+         <li><a href="/howitworks" class="button secondary">Методика</a></li>
+         <li><a href="/blog" class="button secondary">Блог</a></li>
+        </ul>
+      </div>
+	  <h1><a href="/">Тест словарного запаса</a></h1>
+      <hr />
+    </div>
+  </div>
+
+<!-- End Nav -->
+  
+  {% block content %}{% endblock %}
+
+<!-- Footer -->
+
+  <footer class="row">
+    <div class="medium-12 columns">
+      <hr />
+      <div class="row">
+        <div class="medium-12 columns">
+          <p class="text-center">Автор - Григорий Головин</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/templates/foundation.js"></script>
+    <script>
+      $(document).foundation();
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+  </body>
+</html>

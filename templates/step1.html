@@ -1,0 +1,62 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<!-- Main Page Content -->
+
+<div class="row">
+	
+	<div class="medium-9 text-left columns">
+		<p>Отметьте все слова, значения которых вы знаете.</p>
+	</div>
+		
+	<div class="medium-3 text-right columns">
+		<p>Шаг 1 из 2</p>
+	</div>
+
+    <div class="medium-12 columns" role="content">
+	
+		<div class="panel">
+			<form action="" method="post" name="login">
+				{{form.hidden_tag()}}			
+				<div class="row">
+					<div class="medium-3 columns">
+						{% for word in form.questions0 %}
+							{{word}}{{word.label}}<br>
+						{% endfor %}
+					</div>
+
+					<div class="medium-3 columns">
+						{% for word in form.questions1 %}
+							{{word}}{{word.label}}<br>
+						{% endfor %}
+					</div>
+
+					<div class="medium-3 columns">
+						{% for word in form.questions2 %}
+							{{word}}{{word.label}}<br>
+						{% endfor %}
+					</div>
+
+					<div class="medium-3 columns">
+						{% for word in form.questions3 %}
+							{{word}}{{word.label}}<br>
+						{% endfor %}
+					</div>
+				</div>
+				<p></p>		
+				
+				<div class="row">
+					<div class="medium-12 text-center columns">
+						<input type="submit" class="button" value="Продолжить" />
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>
+	
+
+</div>
+
+<!-- End Main Content -->
+
+{% endblock %}
